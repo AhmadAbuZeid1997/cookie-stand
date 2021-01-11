@@ -20,12 +20,8 @@ h1{
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-main{
-    background-color: chocolate;
-    height: 1000px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
+
+
 footer{
     background-color: rgb(119, 119, 241);
     height: 40px;
