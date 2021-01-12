@@ -4,33 +4,79 @@ header{
     margin-bottom: 0px;
     margin-left: 0px;
     margin-right: 0px;
-    
+    padding: 0%;
+    border: 0px;
 }
-#main-heading{
-    text-align: center;
-    list-style: none;
+img.head-content{
+    width: 200px;
+    height: 70px;
+    margin-left: 20px;
 }
-.heading{
-display: inline;
-margin-right: 60px;
-font-style: oblique;
-font-size: 20px;
+.head-content{
+display: inline-block;
+}
+div.head-content{
+    margin-left: 260px;
 }
 h1{
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
+#heading-ul{
+    text-align: center;
+    list-style: none;
+}
+.heading-li{
+display: inline;
+margin-right: 60px;
+font-style: oblique;
+font-size: 20px;
+}
 
 footer{
     background-color: rgb(119, 119, 241);
     height: 40px;
 }
-#image{
+#image1{
     display: flex;
     justify-content: center;
 }
-#info{
-background-color: chocolate;
-}
 
+table, th,td{
+    border: solid 3px;
+}
+#body , #content{
+    background-color: chocolate;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+.types img{
+    width: 400px;
+    height: 400px;
+    
+}
+.types{
+    display: inline-block;
+}
+#minu{
+    text-align:center;
+}
+.shops img{
+    width: 200px;
+    height: 200px;
+}
+.shops{
+    display: inline-block;
+}
+#shop-location{
+    text-align: center;
+    margin: 0%;
+    padding: 0%;
+}
+hr{
+    border-top: 2px dashed black;
+    margin: 0%;
+    padding: 0%;
+   
+}
