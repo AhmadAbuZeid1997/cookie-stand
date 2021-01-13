@@ -77,22 +77,25 @@ Cookie.prototype.runder= function(){
      data.textContent=this.summationofcookies
 }
 // invoke and creat opjects
+var shopform= document.getElementById('form')
+shopform.addEventListener('submit', function(e) {
+    e.preventDefault();
+        var site = e.target.shopLocation.value;
+        var max = e.target.max.value;
+        var min = e.target.min.value;
+        var avg = e.target.avg.value;
+    
+    site =new Cookie(min,max,avg,site)
+    site.TotalCustumerAndCookieAndSummationoOfCookieInOneDay()
+    site.runder()
+   
 
-var Seattle=new Cookie(23,65,6.3, 'Seattle')
-Seattle.TotalCustumerAndCookieAndSummationoOfCookieInOneDay()
-Seattle.runder()
-var Tokyo=new Cookie(3,24,1.2, 'Tokyo')
-Tokyo.TotalCustumerAndCookieAndSummationoOfCookieInOneDay()
-Tokyo.runder()
-var Dubai=new Cookie(11,38,3.7, 'Dubai')
-Dubai.TotalCustumerAndCookieAndSummationoOfCookieInOneDay()
-Dubai.runder()
-var Paris=new Cookie(20,38,2.3, 'Paris')
-Paris.TotalCustumerAndCookieAndSummationoOfCookieInOneDay()
-Paris.runder()
-var Lima=new Cookie(2,16,4.6, 'Lima')
-Lima.TotalCustumerAndCookieAndSummationoOfCookieInOneDay()
-Lima.runder()
+})
+var cal= document.getElementById('sum')
+sum.addEventListener('submit', submitter)
+function submitter(s) {
+    s.preventDefault()
+
 for (let i = 0; i < Time.length; i++) {
     var SumData=document.createElement('th')
      SumRow.appendChild(SumData)
@@ -107,3 +110,4 @@ for (let i = 0; i < Hourlysummationofcookie.length; i++) {
 var Totallastdata=document.createElement('th')
 SumRow.appendChild(Totallastdata)
 Totallastdata.textContent= TotalAmount
+}
